@@ -1,0 +1,145 @@
+{
+  "workouts": [
+    {
+      "workoutName": "Тренировка 1",
+      "exerciseTimeout": null,
+      "setsCountTimeout": null,
+      "cyclesCountTimeout": null,
+      "cyclesCount": null,
+      "setsCount": null,
+      "workoutTypeId": null,
+      "exercises": [
+        {
+          "exerciseName": "Приседания",
+          "repeatsCount": 20,
+          "repeatsCountTimeout": "40 сек",
+          "id": 1
+        },
+        {
+          "exerciseName": "Приседания",
+          "repeatsCount": 13,
+          "repeatsCountTimeout": "41 сек",
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "workoutName": "Тренировка 1",
+      "exerciseTimeout": null,
+      "setsCountTimeout": null,
+      "cyclesCountTimeout": null,
+      "cyclesCount": null,
+      "setsCount": null,
+      "workoutTypeId": null,
+      "exercises": [
+        {
+          "exerciseName": "Приседания",
+          "repeatsCount": 20,
+          "repeatsCountTimeout": "40 сек",
+          "id": 1
+        },
+        {
+          "exerciseName": "Приседания",
+          "repeatsCount": 13,
+          "repeatsCountTimeout": "41 сек",
+          "id": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "workoutName": null,
+      "exerciseTimeout": null,
+      "setsCountTimeout": null,
+      "cyclesCountTimeout": null,
+      "cyclesCount": null,
+      "setsCount": null,
+      "workoutTypeId": null,
+      "exercises": null,
+      "id": 4
+    },
+    {
+      "workoutName": null,
+      "exerciseTimeout": null,
+      "setsCountTimeout": null,
+      "cyclesCountTimeout": null,
+      "cyclesCount": null,
+      "setsCount": null,
+      "workoutTypeId": null,
+      "exercises": null,
+      "id": 5
+    },
+    {
+      "workoutName": null,
+      "exerciseTimeout": null,
+      "setsCountTimeout": null,
+      "cyclesCountTimeout": null,
+      "cyclesCount": null,
+      "setsCount": null,
+      "workoutTypeId": null,
+      "exercises": null,
+      "id": 6
+    }
+  ],
+  "workout-types": [
+    {
+      "typeName": "Выносливость",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "typeName": "Круговая тренировка"
+    }
+  ],
+  "exercises": [
+    {
+      "exerciseName": "Приседания",
+      "repeatsCount": 21,
+      "repeatsCountTimeout": "40 сек",
+      "id": 1
+    },
+    {
+      "exerciseName": "Приседания",
+      "repeatsCount": 13,
+      "repeatsCountTimeout": "41 сек",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "repeatsCount": 12,
+      "repeatsCountTimeout": "40 сек",
+      "exerciseName": "Приседания"
+    },
+    {
+      "exerciseName": "Подтягивания",
+      "repeatsCount": 12,
+      "repeatsCountTimeout": "60 сек",
+      "id": 4
+    },
+    {
+      "exerciseName": "Приседания",
+      "repeatsCount": 12,
+      "repeatsCountTimeout": "60 сек",
+      "id": 5
+    },
+    {
+      "exerciseName": "1",
+      "repeatsCount": 1,
+      "repeatsCountTimeout": "1",
+      "id": 6
+    }
+  ],
+  "goals": [
+    {
+      "goalTitle": "Цель 2",
+      "status": "Сделать",
+      "id": 1
+    },
+    {
+      "id": 3,
+      "goalTitle": "Цель 3",
+      "status": "Сделать"
+    }
+  ]
+}

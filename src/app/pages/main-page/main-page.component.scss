@@ -1,0 +1,47 @@
+:host {
+
+  .main-page{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    max-width: 20rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ef8964;
+  }
+
+
+  .sidebar-content{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .sidebar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .sidebar-item {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .sidebar-item-link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 1s;
+
+    &:hover {
+      color: #ef8964;
+    }
+  }
+}

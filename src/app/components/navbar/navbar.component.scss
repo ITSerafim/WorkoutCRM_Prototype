@@ -1,0 +1,40 @@
+:host ::ng-deep {
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+  }
+
+  .navbar-items {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .navbar-item-link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 1s;
+
+    &:hover {
+      color: #ef8964;
+    }
+  }
+
+  .navbar-logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .avatar {
+    background-color: #171717;
+    color: #ef8964;
+    cursor: pointer;
+  }
+}

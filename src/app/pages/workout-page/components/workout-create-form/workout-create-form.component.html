@@ -1,0 +1,57 @@
+<form class="create-form" [formGroup]="workoutForm" (ngSubmit)="submit()">
+  <input
+    id="workoutName"
+    type="text"
+    pInputText
+    placeholder="Название тренировки"
+    formControlName="workoutName"
+  />
+  <div class="form-controls">
+    <input
+      id="setsCount"
+      type="text"
+      pInputText
+      placeholder="Количество подходов"
+      formControlName="setsCount"
+    />
+    <input
+      id="cyclesCount"
+      type="text"
+      pInputText
+      placeholder="Количество кругов"
+      formControlName="cyclesCount"
+    />
+  </div>
+  <div class="form-controls">
+    <input
+      id="exerciseTimeout"
+      type="text"
+      pInputText
+      placeholder="Время между упражнениями"
+      formControlName="exerciseTimeout"
+    />
+    <input
+      id="setsCountTimeout"
+      type="text"
+      pInputText
+      placeholder="Время между подходами"
+      formControlName="setsCountTimeout"
+    />
+    <input
+      id="cyclesCountTimeout"
+      type="text"
+      pInputText
+      placeholder="Время между циклами"
+      formControlName="cyclesCountTimeout"
+    />
+  </div>
+  <div class="form-btns">
+    <button
+      pButton
+      label="Создать тренировку"
+      class="p-button-success"
+      type="submit"
+      [disabled]="workoutForm.invalid"
+    ></button>
+  </div>
+</form>

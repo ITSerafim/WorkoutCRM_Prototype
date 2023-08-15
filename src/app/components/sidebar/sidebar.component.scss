@@ -1,0 +1,45 @@
+:host {
+  .sidebar {
+    width: 100%;
+    max-width: 25rem;
+    align-items: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    border-right: 1px solid #ef8964;
+    overflow: auto;
+
+    .sidebar-logo{
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 35px;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  .sidebar-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem ;
+  }
+
+  .sidebar-item{
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .sidebar-item-link{
+    text-decoration: none;
+    color: #a5a5b3;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 1s;
+
+    &:hover{
+      color: #ef8964;
+    }
+  }
+}

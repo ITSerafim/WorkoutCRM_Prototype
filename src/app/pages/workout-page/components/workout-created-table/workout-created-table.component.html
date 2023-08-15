@@ -1,0 +1,44 @@
+<p-table [value]="workouts" [columns]="tableColumns" [loading]="isLoading">
+  <ng-template pTemplate="header">
+    <tr>
+      <th *ngFor="let column of tableColumns">
+        {{ column.header }}
+      </th>
+      <th>Действия</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-workout>
+    <tr>
+      <td *ngFor="let column of tableColumns">
+        {{ workout | workoutTablePipe: column.field }}
+      </td>
+      <td>
+        <div class="table-btns">
+          <button
+            pButton
+            icon="pi pi-pencil"
+            class="p-button-success"
+            (click)="editWorkout.emit(workout)"
+          ></button>
+          <button
+            pButton
+            icon="pi pi-cloud-download"
+            class="p-button-warning"
+          ></button>
+          <button
+            pButton
+            icon="pi pi-trash"
+            class="p-button-danger"
+            (click)="deleteWorkout.emit(workout.id)"
+          ></button>
+        </div>
+      </td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="emptymessage">
+    <tr>
+      <td [attr.colspan]="tableColumns.length">Тренировки отсутствуют</td>
+      <td>Действия отсутствуют</td>
+    </tr>
+  </ng-template>
+</p-table>

@@ -1,0 +1,7 @@
+<form class="type-form" [formGroup]="workoutTypeForm" (ngSubmit)="submitForm()">
+  <input pInputText type="text" placeholder="Введите название типа тренировок" formControlName="typeName">
+  <div class="form-btns">
+    <button pButton label="Добавить" type="submit" [disabled]="workoutTypeForm.invalid"></button>
+    <button pButton label="Отмена " type="reset" (click)="dialogClose()"></button>
+  </div>
+</form>

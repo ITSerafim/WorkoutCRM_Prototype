@@ -1,0 +1,10 @@
+<aside class="sidebar">
+  <a routerLink="/" class="sidebar-logo">Workout.CRM</a>
+  <ul class="sidebar-list">
+    <li class="sidebar-item" *ngFor="let link of links">
+      <a routerLink="{{link.pathName}}" class="sidebar-item-link">
+        {{link.linkName}}
+      </a>
+    </li>
+  </ul>
+</aside>

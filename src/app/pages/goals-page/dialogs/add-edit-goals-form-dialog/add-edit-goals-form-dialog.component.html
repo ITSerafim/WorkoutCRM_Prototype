@@ -1,0 +1,8 @@
+<form class="goal-form" [formGroup]="goalForm" (ngSubmit)="submitForm()">
+  <input pInputText type="text" placeholder="Цель" formControlName="goalTitle">
+  <input pInputText type="text" placeholder="Статус" formControlName="status">
+  <div class="form-btns">
+    <button pButton label="Добавить" type="submit" [disabled]="goalForm.invalid"></button>
+    <button pButton label="Отмена " type="reset" (click)="close()"></button>
+  </div>
+</form>

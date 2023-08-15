@@ -1,0 +1,12 @@
+:host{
+  .goal-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-btns{
+    display: flex;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,7 @@
+<app-goals-page-table
+  [goals]="goals$ | async"
+  [isLoading]="isLoading$ | async"
+  [tableColumns]="tableColumns"
+  (openCreateEditDialog)="openGoalsDialog($event)"
+  (removeGoal)="onDeleteGoal($event)"
+></app-goals-page-table>

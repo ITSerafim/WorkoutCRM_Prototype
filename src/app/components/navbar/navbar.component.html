@@ -1,0 +1,13 @@
+<nav class="navbar">
+  <a href="/main" class="navbar-logo">Workout_CRM</a>
+  <section class="navbar-items">
+    <a routerLink="/workouts" class="navbar-item-link">Тренировки</a>
+    <a routerLink="/exercises" class="navbar-item-link">Упражнения</a>
+    <a routerLink="/timetable" class="navbar-item-link">Расписание</a>
+    <a routerLink="/goals" class="navbar-item-link">Цели</a>
+  </section>
+  <section>
+    <p-avatar icon="pi pi-user" styleClass="mr-2 avatar" size="large" (click)="menu.toggle($event)"></p-avatar>
+    <p-menu #menu [popup]="true" [model]="items"></p-menu>
+  </section>
+</nav>

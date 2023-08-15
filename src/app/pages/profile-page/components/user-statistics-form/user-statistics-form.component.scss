@@ -1,0 +1,20 @@
+:host {
+  width: 100%;
+  .user-statistics {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .form-controls {
+    display: flex;
+    gap: 1rem;
+  }
+}

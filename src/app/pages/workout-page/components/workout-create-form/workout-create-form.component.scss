@@ -1,0 +1,22 @@
+:host{
+  .create-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-controls{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    input{
+      width: 100% !important;
+    }
+  }
+
+  .form-btns{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,36 @@
+<form
+  class="exercise-form"
+  [formGroup]="exerciseForm"
+  (ngSubmit)="submitForm()"
+>
+  <input
+    pInputText
+    type="text"
+    placeholder="Введите название упражнения"
+    formControlName="exerciseName"
+  />
+  <p-inputNumber
+    placeholder="Введите количество повторений"
+    formControlName="repeatsCount"
+  ></p-inputNumber>
+  <input
+    pInputText
+    type="text"
+    placeholder="Отдых между повторениями"
+    formControlName="repeatsCountTimeout"
+  />
+  <div class="form-btns">
+    <button
+      pButton
+      label="Добавить"
+      type="submit"
+      [disabled]="exerciseForm.invalid"
+    ></button>
+    <button
+      pButton
+      label="Отмена "
+      type="reset"
+      (click)="this.close()"
+    ></button>
+  </div>
+</form>
